@@ -18,6 +18,12 @@ body {
   font-size: 44px;
 }
 
+.container > h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
 .img-container {
   border: 2px solid red;
   margin-top: 70px;
@@ -32,14 +38,23 @@ body {
 
 input[type='email'] {
   width: 45%;
-  padding: 15px;
+  padding: 15px 25px;
   border-radius: 30px;
-  border: 1px solid #ede2e5;
-  color: #bd9d9c;
+  border: 1px solid #cfd2e3;
+  font-size: medium;
+  opacity: 0.4;
 }
 
 input[type='email']:focus {
   outline: none;
+}
+
+input[type='email']:focus {
+  border: 1px solid blue;
+}
+
+input[type='email']:focus:invalid {
+  border: 1px solid red;
 }
 
 button[type='submit'] {
@@ -47,7 +62,57 @@ button[type='submit'] {
   padding: 15px;
   margin-left: 10px;
   border-radius: 30px;
-  border: 1px solid hsl(0, 80%, 86%);
+  border: none;
+  box-shadow: 0 4px 6px -1px hsl(223, 100%, 88%),
+    0 2px 4px -1px hsl(223, 100%, 88%);
   background-color: hsl(223, 87%, 63%);
   color: #ffffff;
+}
+
+button[type='submit']:hover {
+  cursor: pointer;
+}
+
+.social-icons {
+  border: 2px solid red;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+.fab {
+  padding: 8px;
+  background-color: #ffffff;
+  color: blue;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.fab:hover {
+  background-color: blue;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  padding: 8px 11px;
+}
+
+.txt-small {
+  font-size: smaller;
+  color: #969696;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10%;
+  }
+
+  input[type='email'] {
+    width: 80%;
+  }
+
+  button {
+    padding: 400px;
+    margin-top: 30px;
+  }
 }
