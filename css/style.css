@@ -10,7 +10,6 @@ body {
 .container {
   margin: 4% 24%;
   text-align: center;
-  border: 2px solid black;
 }
 
 .container > h2 {
@@ -25,7 +24,6 @@ body {
 }
 
 .img-container {
-  border: 2px solid red;
   margin-top: 70px;
   height: 400px;
 }
@@ -74,7 +72,6 @@ button[type='submit']:hover {
 }
 
 .social-icons {
-  border: 2px solid red;
   margin-top: 55px;
   margin-bottom: 20px;
 }
